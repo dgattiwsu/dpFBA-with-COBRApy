@@ -2,7 +2,7 @@
 
 The key idea of *dynamic parallel FBA* (**dpFBA**) is to perform dFBA on individual models while keeping track of the shared pool of external metabolites from which all models can take up nutrients. The concentrations of each biomass and of the external metabolites is updated at each time interval. 
 
-COBRApy currently offers only a static optimization approach (SOA) based dFBA implementation for the simulation of the batch growth of a single species over an integration interval from $t_0$ to $t_f$,  divided in $n$ time steps. Here we describe a simple method to extend COBRApy dFBA to a community of species without the need for any modification of the current package.
+COBRApy currently offers only a static optimization approach (SOA) implementation of dFBA for the simulation of the batch growth of a single species over an integration interval from $t_0$ to $t_f$,  divided in $n$ time steps. Here we describe a simple method to extend COBRApy dFBA to dpFBA for the simulation of a community of species without the need for any modification of the current package.
 
 Our method involves 6 steps:
 
